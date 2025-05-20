@@ -73,8 +73,8 @@ class VideoDepthAnything(nn.Module):
 
         transform = Compose([
             Resize(
-                width=input_size,
-                height=input_size,
+                width=frame_width,
+                height=frame_height,
                 resize_target=False,
                 keep_aspect_ratio=True,
                 ensure_multiple_of=14,
